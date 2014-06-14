@@ -7,16 +7,16 @@ var packages = [];
 int pages = 0;
 int currentPage = 0;
 bool verbose = false;
+String outFile = "packages.json";
 
-main(List<String> argz) {
-  var args = new List.from(argz);
-  verbose = args.contains("--verbose");
+main(List<String> args) {
+  if (args.length > 0) {
+    outFile = args[0];
+  }
   visit_url("http://pub.dartlang.org/api/packages");
 }
 
 visit_url(url) {
-  if (verbose)
-    print("Visiting URL: ${url}");
   client.getUrl(Uri.parse(url)).then((HttpClientRequest request) {
     return request.close();
   }).then((HttpClientResponse response) {
@@ -26,15 +26,13 @@ visit_url(url) {
       }
       currentPage++;
       var pkgs = content["packages"];
-      if (verbose)
-        print("Found ${pkgs.length} Packages");
       packages.addAll(pkgs);
       if (currentPage != pages) {
         visit_url(content["next_url"]);
       } else {
-        var encoder = new JsonEncoder("    ");
-        var file = new File("pub-packages.json");
-        file.createSync();
+        var encoder = new JsonEncoder.withIndent("    ");
+        var file = new File(outFile);
+        file.createSync(recursive: true);
         file.writeAsStringSync(encoder.convert(packages));
       }
     });
