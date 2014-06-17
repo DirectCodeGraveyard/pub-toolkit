@@ -1,5 +1,3 @@
 # Pub JSON Data Dumps
 
-package dumps from http://pub.dartlang.org/
-
-generated with the create_dump.dart script
+These package dumps are automatically generated at 8PM EST Everyday
