@@ -1,5 +1,177 @@
 [
     {
+        "name": "unscripted",
+        "url": "http://pub.dartlang.org/api/packages/unscripted",
+        "uploaders_url": "http://pub.dartlang.org/api/packages/unscripted/uploaders",
+        "new_version_url": "http://pub.dartlang.org/api/packages/unscripted/versions/new",
+        "version_url": "http://pub.dartlang.org/api/packages/unscripted/versions/{version}",
+        "latest": {
+            "pubspec": {
+                "version": "0.4.2",
+                "description": "Declarative command-line interface programming.",
+                "dependencies": {
+                    "quiver": "any",
+                    "args": ">=0.11.0 <0.12.0",
+                    "collection": "any",
+                    "ansicolor": "any",
+                    "path": "any",
+                    "mockable_filesystem": "any"
+                },
+                "author": "Sean Eagan <seaneagan1@gmail.com>",
+                "dev_dependencies": {
+                    "unittest": "any"
+                },
+                "homepage": "http://github.com/seaneagan/unscripted",
+                "name": "unscripted"
+            },
+            "url": "http://pub.dartlang.org/api/packages/unscripted/versions/0.4.2",
+            "archive_url": "http://pub.dartlang.org/packages/unscripted/versions/0.4.2.tar.gz",
+            "version": "0.4.2",
+            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/unscripted/versions/0.4.2/new_dartdoc",
+            "package_url": "http://pub.dartlang.org/api/packages/unscripted"
+        }
+    },
+    {
+        "name": "shadowdom_teacher",
+        "url": "http://pub.dartlang.org/api/packages/shadowdom_teacher",
+        "uploaders_url": "http://pub.dartlang.org/api/packages/shadowdom_teacher/uploaders",
+        "new_version_url": "http://pub.dartlang.org/api/packages/shadowdom_teacher/versions/new",
+        "version_url": "http://pub.dartlang.org/api/packages/shadowdom_teacher/versions/{version}",
+        "latest": {
+            "pubspec": {
+                "version": "0.0.1",
+                "name": "shadowdom_teacher",
+                "dependencies": {
+                    "args": ">=0.9.0 <0.10.0",
+                    "csslib": ">=0.9.2 < 0.10.0"
+                },
+                "author": "Name It Later",
+                "homepage": "https://www.github.com/nameitlater/shadowdom-teacher",
+                "description": "Teach bootstrap, flat_ui, and font-awesome to use shadowdom."
+            },
+            "url": "http://pub.dartlang.org/api/packages/shadowdom_teacher/versions/0.0.1",
+            "archive_url": "http://pub.dartlang.org/packages/shadowdom_teacher/versions/0.0.1.tar.gz",
+            "version": "0.0.1",
+            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/shadowdom_teacher/versions/0.0.1/new_dartdoc",
+            "package_url": "http://pub.dartlang.org/api/packages/shadowdom_teacher"
+        }
+    },
+    {
+        "name": "iris",
+        "url": "http://pub.dartlang.org/api/packages/iris",
+        "uploaders_url": "http://pub.dartlang.org/api/packages/iris/uploaders",
+        "new_version_url": "http://pub.dartlang.org/api/packages/iris/versions/new",
+        "version_url": "http://pub.dartlang.org/api/packages/iris/versions/{version}",
+        "latest": {
+            "pubspec": {
+                "dependencies": {
+                    "barback": ">=0.13.0 <0.14.0",
+                    "logging": ">=0.9.1+1 <0.10.0",
+                    "protobuf": ">=0.3.3 <0.4.0",
+                    "route": ">=0.4.6 <0.5.0",
+                    "annotation_crawler": ">=0.1.0 <0.2.0",
+                    "path": ">=1.1.0 <2.0.0"
+                },
+                "name": "iris",
+                "version": "0.5.0",
+                "author": "Matias Meno <m@tias.me>",
+                "dev_dependencies": {
+                    "unittest": ">=0.11.0 <0.12.0",
+                    "mock": ">=0.11.0 <0.12.0"
+                },
+                "homepage": "https://enyo.github.io/iris",
+                "description": "A complete abstraction of client <-> server communication"
+            },
+            "url": "http://pub.dartlang.org/api/packages/iris/versions/0.5.0",
+            "archive_url": "http://pub.dartlang.org/packages/iris/versions/0.5.0.tar.gz",
+            "version": "0.5.0",
+            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/iris/versions/0.5.0/new_dartdoc",
+            "package_url": "http://pub.dartlang.org/api/packages/iris"
+        }
+    },
+    {
+        "name": "codewriter",
+        "url": "http://pub.dartlang.org/api/packages/codewriter",
+        "uploaders_url": "http://pub.dartlang.org/api/packages/codewriter/uploaders",
+        "new_version_url": "http://pub.dartlang.org/api/packages/codewriter/versions/new",
+        "version_url": "http://pub.dartlang.org/api/packages/codewriter/versions/{version}",
+        "latest": {
+            "pubspec": {
+                "version": "0.1.1",
+                "description": "A pub package",
+                "author": "Axel Christ<adracus@gmail.com>",
+                "dev_dependencies": {
+                    "unittest": ">=0.11.0+2 <0.12.0"
+                },
+                "homepage": "https://github.com/Adracus/CodeWriter",
+                "name": "codewriter"
+            },
+            "url": "http://pub.dartlang.org/api/packages/codewriter/versions/0.1.1",
+            "archive_url": "http://pub.dartlang.org/packages/codewriter/versions/0.1.1.tar.gz",
+            "version": "0.1.1",
+            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/codewriter/versions/0.1.1/new_dartdoc",
+            "package_url": "http://pub.dartlang.org/api/packages/codewriter"
+        }
+    },
+    {
+        "name": "cameleon",
+        "url": "http://pub.dartlang.org/api/packages/cameleon",
+        "uploaders_url": "http://pub.dartlang.org/api/packages/cameleon/uploaders",
+        "new_version_url": "http://pub.dartlang.org/api/packages/cameleon/versions/new",
+        "version_url": "http://pub.dartlang.org/api/packages/cameleon/versions/{version}",
+        "latest": {
+            "pubspec": {
+                "version": "0.3.0",
+                "homepage": "https://github.com/platelk/cameleon.dart",
+                "description": "Library that provide simple way of creating http based application",
+                "name": "cameleon",
+                "author": "PLATEL Kevin <platel.kevin@gmail.com>"
+            },
+            "url": "http://pub.dartlang.org/api/packages/cameleon/versions/0.3.0",
+            "archive_url": "http://pub.dartlang.org/packages/cameleon/versions/0.3.0.tar.gz",
+            "version": "0.3.0",
+            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/cameleon/versions/0.3.0/new_dartdoc",
+            "package_url": "http://pub.dartlang.org/api/packages/cameleon"
+        }
+    },
+    {
+        "name": "angular_ui",
+        "url": "http://pub.dartlang.org/api/packages/angular_ui",
+        "uploaders_url": "http://pub.dartlang.org/api/packages/angular_ui/uploaders",
+        "new_version_url": "http://pub.dartlang.org/api/packages/angular_ui/versions/new",
+        "version_url": "http://pub.dartlang.org/api/packages/angular_ui/versions/{version}",
+        "latest": {
+            "pubspec": {
+                "description": "Port of Angular-UI to Dart.",
+                "dev_dependencies": {
+                    "unittest": ">=0.11.0+2 <0.12.0",
+                    "mock": ">=0.11.0+1 <0.12.0"
+                },
+                "environment": {
+                    "sdk": ">=1.4.3 <2.0.0"
+                },
+                "version": "0.5.2",
+                "dependencies": {
+                    "angular": ">=0.12.0 <0.13.0"
+                },
+                "authors": [
+                    "Sergey Akopkokhyants <akserg@gmail.com>",
+                    "Tonis Pool <tonis.pool@gmail.com>",
+                    "Gunter Zochbauer <gzoechi@gmail.com>",
+                    "Francesco Cina <ufoscout@gmail.com>",
+                    "Neeraj Mittal <mittal.neeraj@gmail.com>"
+                ],
+                "homepage": "http://akserg.github.io/angular.dart.ui",
+                "name": "angular_ui"
+            },
+            "url": "http://pub.dartlang.org/api/packages/angular_ui/versions/0.5.2",
+            "archive_url": "http://pub.dartlang.org/packages/angular_ui/versions/0.5.2.tar.gz",
+            "version": "0.5.2",
+            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/angular_ui/versions/0.5.2/new_dartdoc",
+            "package_url": "http://pub.dartlang.org/api/packages/angular_ui"
+        }
+    },
+    {
         "name": "zengen",
         "url": "http://pub.dartlang.org/api/packages/zengen",
         "uploaders_url": "http://pub.dartlang.org/api/packages/zengen/uploaders",
@@ -91,30 +263,6 @@
             "version": "0.0.3",
             "new_dartdoc_url": "http://pub.dartlang.org/api/packages/dacsslide/versions/0.0.3/new_dartdoc",
             "package_url": "http://pub.dartlang.org/api/packages/dacsslide"
-        }
-    },
-    {
-        "name": "codewriter",
-        "url": "http://pub.dartlang.org/api/packages/codewriter",
-        "uploaders_url": "http://pub.dartlang.org/api/packages/codewriter/uploaders",
-        "new_version_url": "http://pub.dartlang.org/api/packages/codewriter/versions/new",
-        "version_url": "http://pub.dartlang.org/api/packages/codewriter/versions/{version}",
-        "latest": {
-            "pubspec": {
-                "version": "0.0.4",
-                "description": "A pub package",
-                "author": "Axel Christ<adracus@gmail.com>",
-                "dev_dependencies": {
-                    "unittest": ">=0.11.0+2 <0.12.0"
-                },
-                "homepage": "https://github.com/Adracus/CodeWriter",
-                "name": "codewriter"
-            },
-            "url": "http://pub.dartlang.org/api/packages/codewriter/versions/0.0.4",
-            "archive_url": "http://pub.dartlang.org/packages/codewriter/versions/0.0.4.tar.gz",
-            "version": "0.0.4",
-            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/codewriter/versions/0.0.4/new_dartdoc",
-            "package_url": "http://pub.dartlang.org/api/packages/codewriter"
         }
     },
     {
@@ -486,13 +634,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.2.7",
-                "description": "Effortless animation of HTML elements",
+                "name": "animate",
                 "dependencies": {
                     "observable": ">=0.1.1 <0.2.0"
                 },
                 "author": "Miguel Guedes <miguel.a.guedes@gmail.com>",
                 "homepage": "https://github.com/miguel-guedes/animate",
-                "name": "animate"
+                "description": "Effortless animation of HTML elements"
             },
             "url": "http://pub.dartlang.org/api/packages/animate/versions/0.2.7",
             "archive_url": "http://pub.dartlang.org/packages/animate/versions/0.2.7.tar.gz",
@@ -847,11 +995,11 @@
         "latest": {
             "pubspec": {
                 "description": "MongoDB driver for Dart",
-                "dev_dependencies": {
-                    "unittest": ">=0.9.0 <0.10.0",
-                    "hop": "any",
-                    "hop_docgen": "any"
-                },
+                "authors": [
+                    "Vadim Tsushko <vadimtsushko@gmail.com>",
+                    "Ted Sander <ted@tedsander.com>",
+                    "Paul Evans <pevans@sonardesign.com>"
+                ],
                 "environment": {
                     "sdk": ">=0.8.10+6 <2.0.0"
                 },
@@ -862,11 +1010,11 @@
                     "logging": ">=0.9.0 <0.10.0",
                     "crypto": ">=0.9.0 <0.10.0"
                 },
-                "authors": [
-                    "Vadim Tsushko <vadimtsushko@gmail.com>",
-                    "Ted Sander <ted@tedsander.com>",
-                    "Paul Evans <pevans@sonardesign.com>"
-                ],
+                "dev_dependencies": {
+                    "unittest": ">=0.9.0 <0.10.0",
+                    "hop_docgen": "any",
+                    "hop": "any"
+                },
                 "homepage": "https://github.com/vadimtsushko/mongo_dart",
                 "name": "mongo_dart"
             },
@@ -1073,39 +1221,6 @@
         }
     },
     {
-        "name": "unscripted",
-        "url": "http://pub.dartlang.org/api/packages/unscripted",
-        "uploaders_url": "http://pub.dartlang.org/api/packages/unscripted/uploaders",
-        "new_version_url": "http://pub.dartlang.org/api/packages/unscripted/versions/new",
-        "version_url": "http://pub.dartlang.org/api/packages/unscripted/versions/{version}",
-        "latest": {
-            "pubspec": {
-                "description": "Declarative command-line interface programming.",
-                "author": "Sean Eagan <seaneagan1@gmail.com>",
-                "documentation": "http://seaneagan.github.com/unscripted",
-                "version": "0.4.1",
-                "dependencies": {
-                    "quiver": "any",
-                    "args": ">=0.11.0 <0.12.0",
-                    "collection": "any",
-                    "ansicolor": "any",
-                    "path": "any",
-                    "mockable_filesystem": "any"
-                },
-                "dev_dependencies": {
-                    "unittest": "any"
-                },
-                "homepage": "http://github.com/seaneagan/unscripted",
-                "name": "unscripted"
-            },
-            "url": "http://pub.dartlang.org/api/packages/unscripted/versions/0.4.1",
-            "archive_url": "http://pub.dartlang.org/packages/unscripted/versions/0.4.1.tar.gz",
-            "version": "0.4.1",
-            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/unscripted/versions/0.4.1/new_dartdoc",
-            "package_url": "http://pub.dartlang.org/api/packages/unscripted"
-        }
-    },
-    {
         "name": "shelf_injection_router",
         "url": "http://pub.dartlang.org/api/packages/shelf_injection_router",
         "uploaders_url": "http://pub.dartlang.org/api/packages/shelf_injection_router/uploaders",
@@ -1135,39 +1250,6 @@
             "version": "0.1.1",
             "new_dartdoc_url": "http://pub.dartlang.org/api/packages/shelf_injection_router/versions/0.1.1/new_dartdoc",
             "package_url": "http://pub.dartlang.org/api/packages/shelf_injection_router"
-        }
-    },
-    {
-        "name": "iris",
-        "url": "http://pub.dartlang.org/api/packages/iris",
-        "uploaders_url": "http://pub.dartlang.org/api/packages/iris/uploaders",
-        "new_version_url": "http://pub.dartlang.org/api/packages/iris/versions/new",
-        "version_url": "http://pub.dartlang.org/api/packages/iris/versions/{version}",
-        "latest": {
-            "pubspec": {
-                "dependencies": {
-                    "barback": ">=0.13.0 <0.14.0",
-                    "logging": ">=0.9.1+1 <0.10.0",
-                    "protobuf": ">=0.3.3 <0.4.0",
-                    "route": ">=0.4.6 <0.5.0",
-                    "annotation_crawler": ">=0.1.0 <0.2.0",
-                    "path": ">=1.1.0 <2.0.0"
-                },
-                "name": "iris",
-                "version": "0.4.2",
-                "author": "Matias Meno <m@tias.me>",
-                "dev_dependencies": {
-                    "unittest": ">=0.11.0 <0.12.0",
-                    "mock": ">=0.11.0 <0.12.0"
-                },
-                "homepage": "https://enyo.github.io/iris",
-                "description": "A complete abstraction of client <-> server communication"
-            },
-            "url": "http://pub.dartlang.org/api/packages/iris/versions/0.4.2",
-            "archive_url": "http://pub.dartlang.org/packages/iris/versions/0.4.2.tar.gz",
-            "version": "0.4.2",
-            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/iris/versions/0.4.2/new_dartdoc",
-            "package_url": "http://pub.dartlang.org/api/packages/iris"
         }
     },
     {
@@ -1324,8 +1406,8 @@
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.11.0",
                     "args": ">=0.10.0 <0.11.0",
-                    "hop": "any",
-                    "stream": "any"
+                    "stream": "any",
+                    "hop": "any"
                 },
                 "homepage": "https://github.com/vadimtsushko/objectory",
                 "name": "objectory"
@@ -1806,15 +1888,15 @@
                 },
                 "version": "0.1.2+2",
                 "dependencies": {
-                    "logging": ">=0.9.0 <0.10.0",
-                    "args": ">=0.9.0 <0.12.0",
                     "bot": ">=0.26.0 <0.28.0",
+                    "args": ">=0.9.0 <0.12.0",
+                    "logging": ">=0.9.0 <0.10.0",
                     "path": ">=1.0.0 <2.0.0"
                 },
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.12.0",
-                    "hop_unittest": ">=0.1.0 <0.2.0",
-                    "hop": ">=0.28.1+2 <0.32.0"
+                    "hop": ">=0.28.1+2 <0.32.0",
+                    "hop_unittest": ">=0.1.0 <0.2.0"
                 },
                 "homepage": "https://github.com/kevmoo/completion.dart",
                 "name": "completion"
@@ -1870,10 +1952,9 @@
         "latest": {
             "pubspec": {
                 "description": "A mirror based serializer and deserializer of Dart objects.",
-                "authors": [
-                    "Diego Rocha <diego.rocha.comp@gmail.com>",
-                    "Dan Parnham <dan@teadriven.me.uk>"
-                ],
+                "dev_dependencies": {
+                    "unittest": ">=0.8.1 <0.12.0"
+                },
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
@@ -1881,9 +1962,10 @@
                 "dependencies": {
                     "quiver": ">=0.8.1 <0.19.0"
                 },
-                "dev_dependencies": {
-                    "unittest": ">=0.8.1 <0.12.0"
-                },
+                "authors": [
+                    "Diego Rocha <diego.rocha.comp@gmail.com>",
+                    "Dan Parnham <dan@teadriven.me.uk>"
+                ],
                 "homepage": "https://github.com/Dreckr/Morph",
                 "name": "morph"
             },
@@ -2183,44 +2265,6 @@
             "version": "0.7.1",
             "new_dartdoc_url": "http://pub.dartlang.org/api/packages/markd/versions/0.7.1/new_dartdoc",
             "package_url": "http://pub.dartlang.org/api/packages/markd"
-        }
-    },
-    {
-        "name": "angular_ui",
-        "url": "http://pub.dartlang.org/api/packages/angular_ui",
-        "uploaders_url": "http://pub.dartlang.org/api/packages/angular_ui/uploaders",
-        "new_version_url": "http://pub.dartlang.org/api/packages/angular_ui/versions/new",
-        "version_url": "http://pub.dartlang.org/api/packages/angular_ui/versions/{version}",
-        "latest": {
-            "pubspec": {
-                "description": "Port of Angular-UI to Dart.",
-                "dev_dependencies": {
-                    "unittest": ">=0.11.0 <0.12.0",
-                    "mock": ">=0.11.0+1 <0.12.0"
-                },
-                "environment": {
-                    "sdk": ">=1.4.2 <2.0.0"
-                },
-                "version": "0.5.1",
-                "dependencies": {
-                    "angular": ">=0.12.0 <0.13.0",
-                    "js": ">=0.2.2 <0.3.0"
-                },
-                "authors": [
-                    "Sergey Akopkokhyants <akserg@gmail.com>",
-                    "Tonis Pool <tonis.pool@gmail.com>",
-                    "Gunter Zochbauer <gzoechi@gmail.com>",
-                    "Francesco Cina <ufoscout@gmail.com>",
-                    "Neeraj Mittal <mittal.neeraj@gmail.com>"
-                ],
-                "homepage": "http://akserg.github.io/angular.dart.ui",
-                "name": "angular_ui"
-            },
-            "url": "http://pub.dartlang.org/api/packages/angular_ui/versions/0.5.1",
-            "archive_url": "http://pub.dartlang.org/packages/angular_ui/versions/0.5.1.tar.gz",
-            "version": "0.5.1",
-            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/angular_ui/versions/0.5.1/new_dartdoc",
-            "package_url": "http://pub.dartlang.org/api/packages/angular_ui"
         }
     },
     {
@@ -2648,10 +2692,10 @@
                 "environment": {
                     "sdk": ">=1.2.0 <2.0.0"
                 },
-                "version": "0.1.0",
                 "dependencies": {
                     "stack_trace": ">=0.9.1 <2.0.0"
                 },
+                "version": "0.1.0",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.12.0"
                 },
@@ -2682,21 +2726,21 @@
                 ],
                 "description": "Deprecated. A Dart port of core-elements (http://polymer.github.io/core-docs/).\n",
                 "documentation": "http://bwu-dart.github.io/core_elements/dartdoc/",
-                "name": "core_elements",
                 "environment": {
                     "sdk": ">=1.4.0-dev.0 <2.0.0"
-                },
-                "version": "0.0.3+2",
-                "dependencies": {
-                    "polymer": ">=0.10.0-pre.10 <1.0.0"
                 },
                 "authors": [
                     "Günter Zöchbauer <guenter@gzoechbauer.com>"
                 ],
-                "homepage": "https://github.com/bwu-dart/core_elements",
+                "version": "0.0.3+2",
+                "dependencies": {
+                    "polymer": ">=0.10.0-pre.10 <1.0.0"
+                },
                 "dev_dependencies": {
                     "unittest": ">=0.10.1+2 <1.0.0"
-                }
+                },
+                "homepage": "https://github.com/bwu-dart/core_elements",
+                "name": "core_elements"
             },
             "url": "http://pub.dartlang.org/api/packages/core_elements/versions/0.0.3%2B2",
             "archive_url": "http://pub.dartlang.org/packages/core_elements/versions/0.0.3%2B2.tar.gz",
@@ -2714,13 +2758,13 @@
         "latest": {
             "pubspec": {
                 "version": "1.0.4",
-                "name": "ChronosGL",
+                "description": "A simple, minimal and elegant scene graph for WebGL written in Dart",
                 "dependencies": {
                     "browser": "any"
                 },
                 "author": "rhulha <java4life@gmail.com>",
                 "homepage": "https://github.com/rhulha/ChronosGL",
-                "description": "A simple, minimal and elegant scene graph for WebGL written in Dart"
+                "name": "ChronosGL"
             },
             "url": "http://pub.dartlang.org/api/packages/ChronosGL/versions/1.0.4",
             "archive_url": "http://pub.dartlang.org/packages/ChronosGL/versions/1.0.4.tar.gz",
@@ -3449,10 +3493,10 @@
                 "environment": {
                     "sdk": ">=0.8.10+6 <2.0.0"
                 },
+                "version": "0.5.3",
                 "dependencies": {
                     "rational": ">=0.0.4 <1.0.0"
                 },
-                "version": "0.5.3",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.10.0",
                     "benchmark_harness": ">=1.0.2 <2.0.0"
@@ -3482,10 +3526,10 @@
                 },
                 "author": "Egor Day <edaydev@gmail.com>",
                 "dev_dependencies": {
-                    "browser": "any",
-                    "scheduled_test": "any",
+                    "hop": "any",
                     "mock": "any",
-                    "hop": "any"
+                    "scheduled_test": "any",
+                    "browser": "any"
                 },
                 "homepage": "https://github.com/daydev/angular_convert.git",
                 "name": "angular_convert"
@@ -4414,11 +4458,10 @@
         "latest": {
             "pubspec": {
                 "description": "Library to use for Google OAuth2 authentication / Client-side flow",
-                "authors": [
-                    "Gerwin Sturm <scarygami@gmail.com>",
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Kevin Moore <kevin@thinkpixellab.com>"
-                ],
+                "dev_dependencies": {
+                    "hop": ">=0.30.3 <0.32.0",
+                    "browser": ">=0.9.0 <0.11.0"
+                },
                 "environment": {
                     "sdk": ">=1.3.0 <2.0.0"
                 },
@@ -4430,10 +4473,11 @@
                     "crypto": ">=0.9.0 <0.10.0",
                     "path": ">=1.0.0 <2.0.0"
                 },
-                "dev_dependencies": {
-                    "hop": ">=0.30.3 <0.32.0",
-                    "browser": ">=0.9.0 <0.11.0"
-                },
+                "authors": [
+                    "Gerwin Sturm <scarygami@gmail.com>",
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Kevin Moore <kevin@thinkpixellab.com>"
+                ],
                 "homepage": "https://github.com/dart-gde/dart-google-oauth2-library",
                 "name": "google_oauth2_client"
             },
@@ -4635,22 +4679,22 @@
         "latest": {
             "pubspec": {
                 "name": "rikulo_commons",
-                "authors": [
-                    "Tom Yeh <tomyeh@rikulo.org>",
-                    "Henri Chen <henrichen@rikulo.org>",
-                    "Simon Pai <simonpai@rikulo.org>"
-                ],
+                "dev_dependencies": {
+                    "unittest": "any"
+                },
                 "environment": {
                     "sdk": ">=1.4.0"
                 },
                 "version": "1.1.0",
                 "dependencies": {
-                    "mime": "any",
-                    "logging": "any"
+                    "logging": "any",
+                    "mime": "any"
                 },
-                "dev_dependencies": {
-                    "unittest": "any"
-                },
+                "authors": [
+                    "Tom Yeh <tomyeh@rikulo.org>",
+                    "Henri Chen <henrichen@rikulo.org>",
+                    "Simon Pai <simonpai@rikulo.org>"
+                ],
                 "homepage": "http://rikulo.org",
                 "description": "Common reusable Dart classes and utilities."
             },
@@ -4681,9 +4725,9 @@
                 "dev_dependencies": {
                     "path": ">=0.9.0 <0.10.0",
                     "editor_build": ">=0.0.4 <0.1.0",
-                    "js_wrapping_generator": "0.0.3",
+                    "browser": ">=0.9.0 <0.10.0",
                     "unittest": ">=0.9.0 <0.10.0",
-                    "browser": ">=0.9.0 <0.10.0"
+                    "js_wrapping_generator": "0.0.3"
                 },
                 "homepage": "https://github.com/a14n/dart-google-maps",
                 "name": "google_maps"
@@ -4917,8 +4961,8 @@
                 "dev_dependencies": {
                     "unittest": ">=0.11.0 <0.12.0",
                     "bot_io": ">=0.26.3 <0.27.0",
-                    "hop_unittest": ">=0.1.0 <0.2.0",
-                    "hop_docgen": ">=0.1.3 <0.2.0"
+                    "hop_docgen": ">=0.1.3 <0.2.0",
+                    "hop_unittest": ">=0.1.0 <0.2.0"
                 },
                 "homepage": "https://github.com/kevmoo/hop_git",
                 "name": "hop_git"
@@ -4946,9 +4990,9 @@
                 },
                 "dependencies": {
                     "git": ">=0.2.1 <0.5.0",
+                    "args": ">=0.10.0 <0.12.0",
                     "bot_io": ">=0.26.3 <0.27.0",
-                    "hop": ">=0.30.2 <0.32.0",
-                    "args": ">=0.10.0 <0.12.0"
+                    "hop": ">=0.30.2 <0.32.0"
                 },
                 "version": "0.1.3+1",
                 "dev_dependencies": {
@@ -5044,17 +5088,17 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
+                "version": "0.26.3+1",
                 "dependencies": {
-                    "logging": ">=0.9.0 <0.10.0",
                     "bot": ">=0.27.0 <0.28.0",
+                    "logging": ">=0.9.0 <0.10.0",
                     "crypto": ">=0.9.0 <0.10.0",
                     "path": ">=1.0.0 <2.0.0"
                 },
-                "version": "0.26.3+1",
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.12.0",
-                    "hop_unittest": ">=0.1.0 <0.2.0",
                     "hop_docgen": ">=0.1.0 <0.2.0",
+                    "hop_unittest": ">=0.1.0 <0.2.0",
                     "hop": ">=0.28.1+2 <0.32.0"
                 },
                 "homepage": "https://github.com/kevmoo/bot_io.dart",
@@ -5084,9 +5128,9 @@
                 "version": "0.27.0+2",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.12.0",
-                    "hop_docgen": ">=0.1.1 <0.2.0",
-                    "bot_test": ">=0.1.5 <0.2.0",
                     "hop_unittest": ">=0.1.0 <0.2.0",
+                    "bot_test": ">=0.1.5 <0.2.0",
+                    "hop_docgen": ">=0.1.1 <0.2.0",
                     "hop": ">=0.30.2 <0.32.0",
                     "browser": ">=0.9.0 <0.11.0"
                 },
@@ -7871,11 +7915,9 @@
         "latest": {
             "pubspec": {
                 "description": "Auto-generated client library for accessing the drive v2 API",
-                "authors": [
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Gerwin Sturm <scarygami@gmail.com>",
-                    "Kevin Moore <kevin@thinkpixellab.com>"
-                ],
+                "dev_dependencies": {
+                    "hop": ">=0.30.2 <0.31.0"
+                },
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
@@ -7883,9 +7925,11 @@
                 "dependencies": {
                     "google_oauth2_client": ">=0.3.2 <0.4.0"
                 },
-                "dev_dependencies": {
-                    "hop": ">=0.30.2 <0.31.0"
-                },
+                "authors": [
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Gerwin Sturm <scarygami@gmail.com>",
+                    "Kevin Moore <kevin@thinkpixellab.com>"
+                ],
                 "homepage": "https://github.com/dart-gde/discovery_api_dart_client_generator",
                 "name": "google_drive_v2_api"
             },
@@ -9501,10 +9545,10 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
+                "version": "0.11.0+1",
                 "dependencies": {
                     "matcher": ">=0.10.0 <0.11.0"
                 },
-                "version": "0.11.0+1",
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.12.0"
                 },
@@ -9659,10 +9703,10 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
-                "version": "0.11.0+1",
                 "dependencies": {
                     "collection": ">=0.9.0 <0.10.0"
                 },
+                "version": "0.11.0+1",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.11.0"
                 },
@@ -9782,11 +9826,11 @@
                 "environment": {
                     "sdk": ">=0.8.10+6 <2.0.0"
                 },
+                "version": "0.7.1",
                 "dependencies": {
                     "bignum": ">=0.0.5 <0.1.0",
                     "fixnum": ">=0.9.0 <0.10.0"
                 },
-                "version": "0.7.1",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.10.0",
                     "benchmark_harness": ">=1.0.4 <2.0.0",
@@ -9813,8 +9857,8 @@
                 "version": "0.1.6",
                 "description": "A thin express-js inspired layer around Darts primitive HttpServer APIs with JSON and Jade HTML view engine support",
                 "dependencies": {
-                    "jaded": ">=0.1.9 <0.2.0",
                     "ansicolor": ">=0.0.9 <0.1.0",
+                    "jaded": ">=0.1.9 <0.2.0",
                     "args": ">=0.5.20 <0.6.0"
                 },
                 "author": "Demis Bellot <demis.bellot@gmail.com>",
@@ -9841,13 +9885,13 @@
         "latest": {
             "pubspec": {
                 "version": "1.0.0",
-                "description": "A simple Bomberman Game.",
+                "name": "Bomberman",
                 "dependencies": {
                     "browser": ">=0.10.0+1 <0.10.1"
                 },
                 "author": "Olivier Daneau <olivier.daneau.1@ulaval.ca>",
                 "homepage": "http://odaneau.github.io/index.html",
-                "name": "Bomberman"
+                "description": "A simple Bomberman Game."
             },
             "url": "http://pub.dartlang.org/api/packages/Bomberman/versions/1.0.0",
             "archive_url": "http://pub.dartlang.org/packages/Bomberman/versions/1.0.0.tar.gz",
@@ -10918,18 +10962,6 @@
         "latest": {
             "pubspec": {
                 "description": "An library for accessing the Chrome APIs in a packaged app or extension.\n",
-                "authors": [
-                    "Devon Carew <devoncarew@gmail.com>",
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Kevin Moore <kevin@thinkpixellab.com>"
-                ],
-                "environment": {
-                    "sdk": ">=1.0.0 <2.0.0"
-                },
-                "version": "0.5.6",
-                "dependencies": {
-                    "barback": "any"
-                },
                 "dev_dependencies": {
                     "logging": "any",
                     "unittest": "any",
@@ -10939,6 +10971,18 @@
                     "unscripted": ">=0.3.0 <0.4.0",
                     "browser": "any"
                 },
+                "environment": {
+                    "sdk": ">=1.0.0 <2.0.0"
+                },
+                "version": "0.5.6",
+                "dependencies": {
+                    "barback": "any"
+                },
+                "authors": [
+                    "Devon Carew <devoncarew@gmail.com>",
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Kevin Moore <kevin@thinkpixellab.com>"
+                ],
                 "homepage": "https://github.com/dart-gde/chrome.dart",
                 "name": "chrome"
             },
@@ -11398,8 +11442,8 @@
                 "dev_dependencies": {
                     "yaml": "any",
                     "unittest": ">=0.9.0 < 0.11.0",
-                    "hop": ">=0.27.0",
                     "hop_docgen": ">=0.1.0 <0.2.0",
+                    "hop": ">=0.27.0",
                     "browser": "any"
                 },
                 "homepage": "https://github.com/patefacio/ebisu",
@@ -11425,14 +11469,14 @@
                 "author": "Daniel Davidson <dbdavidson@yahoo.com>",
                 "version": "1.0.2",
                 "dependencies": {
-                    "logging": ">=0.8.0 <0.10.0",
-                    "quiver": ">=0.18.0<0.19.0"
+                    "quiver": ">=0.18.0<0.19.0",
+                    "logging": ">=0.8.0 <0.10.0"
                 },
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 < 0.11.0",
                     "ebisu": "any",
-                    "hop": ">=0.27.0",
                     "hop_docgen": ">=0.1.0 <0.2.0",
+                    "hop": ">=0.27.0",
                     "browser": "any"
                 },
                 "homepage": "https://github.com/patefacio/id",
@@ -11481,13 +11525,9 @@
         "latest": {
             "pubspec": {
                 "description": "A high-performance async/non-blocking Redis client for Dart.",
-                "authors": [
-                    "Demis Bellot <demis.bellot@gmail.com>",
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Matias Meno <m@tias.me>",
-                    "Baruch Berger <baruchberger@gmail.com>",
-                    "Max Horstmann <max.horstmann@gmail.com>"
-                ],
+                "dev_dependencies": {
+                    "unittest": ">=0.10.0 < 0.11.0"
+                },
                 "environment": {
                     "sdk": ">=0.8.10+6 <2.0.0"
                 },
@@ -11495,9 +11535,13 @@
                 "dependencies": {
                     "logging": ">=0.9.0 <0.10.0"
                 },
-                "dev_dependencies": {
-                    "unittest": ">=0.10.0 < 0.11.0"
-                },
+                "authors": [
+                    "Demis Bellot <demis.bellot@gmail.com>",
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Matias Meno <m@tias.me>",
+                    "Baruch Berger <baruchberger@gmail.com>",
+                    "Max Horstmann <max.horstmann@gmail.com>"
+                ],
                 "homepage": "https://github.com/dartist/redis_client",
                 "name": "redis_client"
             },
@@ -11832,13 +11876,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.1.0",
-                "description": "Infinite Scrolling for AngularDart\n",
+                "name": "ng_infinite_scroll",
                 "dependencies": {
                     "angular": ">=0.10.0 <0.10.1"
                 },
                 "author": "Juha Komulainen <juha.komulainen@evident.fi>",
                 "homepage": "https://bitbucket.org/evidentsolutions/dart-ng-infinite-scroll",
-                "name": "ng_infinite_scroll"
+                "description": "Infinite Scrolling for AngularDart\n"
             },
             "url": "http://pub.dartlang.org/api/packages/ng_infinite_scroll/versions/0.1.0",
             "archive_url": "http://pub.dartlang.org/packages/ng_infinite_scroll/versions/0.1.0.tar.gz",
@@ -12767,10 +12811,10 @@
                 "environment": {
                     "sdk": ">=1.0.0"
                 },
+                "version": "0.7.2",
                 "dependencies": {
                     "quiver": "any"
                 },
-                "version": "0.7.2",
                 "dev_dependencies": {
                     "unittest": "any"
                 },
@@ -14988,13 +15032,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.0.0",
-                "description": "A sample command-line application",
+                "name": "DartDemoCLI",
                 "dependencies": {
                     "xmlstream": "any"
                 },
                 "author": "Jacob",
                 "homepage": "http://localhost",
-                "name": "DartDemoCLI"
+                "description": "A sample command-line application"
             },
             "url": "http://pub.dartlang.org/api/packages/DartDemoCLI/versions/0.0.0",
             "archive_url": "http://pub.dartlang.org/packages/DartDemoCLI/versions/0.0.0.tar.gz",
@@ -16209,10 +16253,10 @@
                 },
                 "author": "Francesco Cina <ufoscout@google.com>",
                 "dev_dependencies": {
-                    "browser": "any",
                     "unittest": "any",
                     "shadow_dom": "any",
-                    "js": "any"
+                    "js": "any",
+                    "browser": "any"
                 },
                 "homepage": "http://angular-dart-ui.github.io/",
                 "name": "angular_dart_ui_bootstrap"
@@ -16476,10 +16520,10 @@
         "latest": {
             "pubspec": {
                 "description": "Access JavaScript from Dart.",
-                "authors": [
-                    "Dart Team <misc@dartlang.org>",
-                    "Alexandre Ardhuin <alexandre.ardhuin@gmail.com>"
-                ],
+                "dev_dependencies": {
+                    "ghpages_generator": ">=0.0.1",
+                    "unittest": ">=0.8.7"
+                },
                 "environment": {
                     "sdk": ">0.8.7"
                 },
@@ -16487,10 +16531,10 @@
                 "dependencies": {
                     "browser": ">=0.8.7"
                 },
-                "dev_dependencies": {
-                    "ghpages_generator": ">=0.0.1",
-                    "unittest": ">=0.8.7"
-                },
+                "authors": [
+                    "Dart Team <misc@dartlang.org>",
+                    "Alexandre Ardhuin <alexandre.ardhuin@gmail.com>"
+                ],
                 "homepage": "https://github.com/dart-lang/js-interop",
                 "name": "js"
             },
@@ -18131,7 +18175,7 @@
         "latest": {
             "pubspec": {
                 "version": "0.1.0",
-                "description": "A Dart wrapper for Firebase.",
+                "name": "firebase",
                 "dependencies": {
                     "browser": ">=0.8.7 <0.10.0"
                 },
@@ -18139,7 +18183,7 @@
                     "Anant Narayanan <anant@kix.in>"
                 ],
                 "homepage": "https://github.com/firebase/firebase-dart/",
-                "name": "firebase"
+                "description": "A Dart wrapper for Firebase."
             },
             "url": "http://pub.dartlang.org/api/packages/firebase/versions/0.1.0",
             "archive_url": "http://pub.dartlang.org/packages/firebase/versions/0.1.0.tar.gz",
@@ -20239,13 +20283,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.0.1",
-                "name": "php_array",
+                "description": "A port of php array functions to dart.",
                 "dependencies": {
                     "unittest": "any"
                 },
                 "author": "Ricky Su <ricky@e2.us>",
                 "homepage": "https://github.com/RickySu/php_array",
-                "description": "A port of php array functions to dart."
+                "name": "php_array"
             },
             "url": "http://pub.dartlang.org/api/packages/php_array/versions/0.0.1",
             "archive_url": "http://pub.dartlang.org/packages/php_array/versions/0.0.1.tar.gz",
@@ -21201,14 +21245,14 @@
         "latest": {
             "pubspec": {
                 "version": "0.1.1",
-                "description": "Primitive utility for asynchronous JSON requests with Dart. Sending JSON data is supported, as well, as simple success/error/always callbacks",
+                "name": "adaj",
                 "dependencies": {
                     "unittest": "0.8.10",
                     "browser": "any"
                 },
                 "author": "Egor Day <edaydev@gmail.com>",
                 "homepage": "https://github.com/daydev/adaj",
-                "name": "adaj"
+                "description": "Primitive utility for asynchronous JSON requests with Dart. Sending JSON data is supported, as well, as simple success/error/always callbacks"
             },
             "url": "http://pub.dartlang.org/api/packages/adaj/versions/0.1.1",
             "archive_url": "http://pub.dartlang.org/packages/adaj/versions/0.1.1.tar.gz",
@@ -21609,10 +21653,10 @@
                 "environment": {
                     "sdk": ">=0.8.10+6 <2.0.0"
                 },
-                "version": "0.14.0",
                 "dependencies": {
                     "persistent": ">=0.8.0 <0.9.0"
                 },
+                "version": "0.14.0",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.10.0"
                 },
@@ -22060,13 +22104,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.3.2",
-                "description": "Makes it easier to expose custom events using the Stream API.",
+                "name": "event_stream",
                 "dependencies": {
                     "unittest": "any"
                 },
                 "author": "Eric J. Smith <eric@codesmithtools.com>",
                 "homepage": "https://github.com/ejsmith/event_stream",
-                "name": "event_stream"
+                "description": "Makes it easier to expose custom events using the Stream API."
             },
             "url": "http://pub.dartlang.org/api/packages/event_stream/versions/0.3.2",
             "archive_url": "http://pub.dartlang.org/packages/event_stream/versions/0.3.2.tar.gz",
@@ -22513,13 +22557,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.0.3",
-                "name": "drandom",
+                "description": "Alternative pseudorandom random number generator for dart based on a similar implementation in mono/C#",
                 "dependencies": {
                     "unittest": "any"
                 },
                 "author": "Adam Singer <financeCoding@gmail.com>",
                 "homepage": "https://github.com/financeCoding/DRandom",
-                "description": "Alternative pseudorandom random number generator for dart based on a similar implementation in mono/C#"
+                "name": "drandom"
             },
             "url": "http://pub.dartlang.org/api/packages/drandom/versions/0.0.3",
             "archive_url": "http://pub.dartlang.org/packages/drandom/versions/0.0.3.tar.gz",
@@ -22784,8 +22828,8 @@
                 "homepage": "http://theburningmonk.github.io/stream_ext/",
                 "dev_dependencies": {
                     "unittest": "any",
-                    "browser": "any",
-                    "js": "any"
+                    "js": "any",
+                    "browser": "any"
                 }
             },
             "url": "http://pub.dartlang.org/api/packages/stream_ext/versions/0.3.0",
@@ -25633,15 +25677,15 @@
         "latest": {
             "pubspec": {
                 "version": "0.2.3",
-                "description": "A simple http router\n",
+                "name": "http_router",
                 "dependencies": {
-                    "service_manager": ">=0.1.0 <0.2.0",
+                    "dictionary": ">=0.2.0 <0.3.0",
                     "option": ">=0.3.0 <0.4.0",
-                    "dictionary": ">=0.2.0 <0.3.0"
+                    "service_manager": ">=0.1.0 <0.2.0"
                 },
                 "author": "Joseph Moniz <joseph.moniz@gmail.com>",
                 "homepage": "https://github.com/JosephMoniz/dart-http-router",
-                "name": "http_router"
+                "description": "A simple http router\n"
             },
             "url": "http://pub.dartlang.org/api/packages/http_router/versions/0.2.3",
             "archive_url": "http://pub.dartlang.org/packages/http_router/versions/0.2.3.tar.gz",
@@ -25853,13 +25897,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.1.2",
-                "name": "service_manager",
+                "description": "A service manager implementation for bootstraping dependency injection\n",
                 "dependencies": {
                     "dictionary": ">=0.2.0 <0.3.0"
                 },
                 "author": "Joseph Moniz <joseph.moniz@gmail.com>",
                 "homepage": "https://github.com/JosephMoniz/dart-option",
-                "description": "A service manager implementation for bootstraping dependency injection\n"
+                "name": "service_manager"
             },
             "url": "http://pub.dartlang.org/api/packages/service_manager/versions/0.1.2",
             "archive_url": "http://pub.dartlang.org/packages/service_manager/versions/0.1.2.tar.gz",
@@ -26116,13 +26160,13 @@
         "latest": {
             "pubspec": {
                 "version": "0.2.4",
-                "name": "dictionary",
+                "description": "A more composable alternative to Dart's native Map implementation\n",
                 "dependencies": {
                     "option": ">=0.3.0 <0.4.0"
                 },
                 "author": "Joseph Moniz <joseph.moniz@gmail.com>",
                 "homepage": "https://github.com/JosephMoniz/dart-dictionary",
-                "description": "A more composable alternative to Dart's native Map implementation\n"
+                "name": "dictionary"
             },
             "url": "http://pub.dartlang.org/api/packages/dictionary/versions/0.2.4",
             "archive_url": "http://pub.dartlang.org/packages/dictionary/versions/0.2.4.tar.gz",
