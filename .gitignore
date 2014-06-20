@@ -1,3 +1,5 @@
 packages/
 pubspec.lock
 data/
+.idea/
+*.iml
