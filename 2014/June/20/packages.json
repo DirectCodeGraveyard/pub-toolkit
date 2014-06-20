@@ -1,5 +1,35 @@
 [
     {
+        "name": "source_maps",
+        "url": "http://pub.dartlang.org/api/packages/source_maps",
+        "uploaders_url": "http://pub.dartlang.org/api/packages/source_maps/uploaders",
+        "new_version_url": "http://pub.dartlang.org/api/packages/source_maps/versions/new",
+        "version_url": "http://pub.dartlang.org/api/packages/source_maps/versions/{version}",
+        "latest": {
+            "pubspec": {
+                "description": "Library to programmatically manipulate source map files.",
+                "author": "Dart Team <misc@dartlang.org>",
+                "environment": {
+                    "sdk": ">=0.8.10+6 <2.0.0"
+                },
+                "version": "0.9.2+1",
+                "dependencies": {
+                    "path": ">=1.2.0 <2.0.0"
+                },
+                "dev_dependencies": {
+                    "unittest": ">=0.9.0 <0.10.0"
+                },
+                "homepage": "http://www.dartlang.org",
+                "name": "source_maps"
+            },
+            "url": "http://pub.dartlang.org/api/packages/source_maps/versions/0.9.2%2B1",
+            "archive_url": "http://pub.dartlang.org/packages/source_maps/versions/0.9.2%2B1.tar.gz",
+            "version": "0.9.2+1",
+            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/source_maps/versions/0.9.2%2B1/new_dartdoc",
+            "package_url": "http://pub.dartlang.org/api/packages/source_maps"
+        }
+    },
+    {
         "name": "analyzer",
         "url": "http://pub.dartlang.org/api/packages/analyzer",
         "uploaders_url": "http://pub.dartlang.org/api/packages/analyzer/uploaders",
@@ -106,11 +136,11 @@
                 "description": "Provides server and web apps the ability to load, manipulate, and save images with various image file formats including PNG, JPEG, GIF, WebP, TIFF, TGA, PSD, and OpenEXR.",
                 "author": "Brendan Duncan <brendanduncan@gmail.com>",
                 "documentation": "https://github.com/brendan-duncan/image/wiki",
+                "version": "1.1.21",
                 "dependencies": {
                     "xml": ">=2.0.0 <3.0.0",
                     "archive": ">=1.0.16 <1.1.0"
                 },
-                "version": "1.1.21",
                 "dev_dependencies": {
                     "unittest": "any",
                     "crypto": ">=0.9.0 <1.0.0"
@@ -123,36 +153,6 @@
             "version": "1.1.21",
             "new_dartdoc_url": "http://pub.dartlang.org/api/packages/image/versions/1.1.21/new_dartdoc",
             "package_url": "http://pub.dartlang.org/api/packages/image"
-        }
-    },
-    {
-        "name": "source_maps",
-        "url": "http://pub.dartlang.org/api/packages/source_maps",
-        "uploaders_url": "http://pub.dartlang.org/api/packages/source_maps/uploaders",
-        "new_version_url": "http://pub.dartlang.org/api/packages/source_maps/versions/new",
-        "version_url": "http://pub.dartlang.org/api/packages/source_maps/versions/{version}",
-        "latest": {
-            "pubspec": {
-                "description": "Library to programmatically manipulate source map files.",
-                "author": "Dart Team <misc@dartlang.org>",
-                "environment": {
-                    "sdk": ">=0.8.10+6 <2.0.0"
-                },
-                "version": "0.9.2",
-                "dependencies": {
-                    "path": ">=1.2.0 <2.0.0"
-                },
-                "dev_dependencies": {
-                    "unittest": ">=0.9.0 <0.10.0"
-                },
-                "homepage": "http://www.dartlang.org",
-                "name": "source_maps"
-            },
-            "url": "http://pub.dartlang.org/api/packages/source_maps/versions/0.9.2",
-            "archive_url": "http://pub.dartlang.org/packages/source_maps/versions/0.9.2.tar.gz",
-            "version": "0.9.2",
-            "new_dartdoc_url": "http://pub.dartlang.org/api/packages/source_maps/versions/0.9.2/new_dartdoc",
-            "package_url": "http://pub.dartlang.org/api/packages/source_maps"
         }
     },
     {
@@ -502,13 +502,10 @@
         "latest": {
             "pubspec": {
                 "description": "Port of Angular-UI to Dart.",
-                "authors": [
-                    "Sergey Akopkokhyants <akserg@gmail.com>",
-                    "Tonis Pool <tonis.pool@gmail.com>",
-                    "Gunter Zochbauer <gzoechi@gmail.com>",
-                    "Francesco Cina <ufoscout@gmail.com>",
-                    "Neeraj Mittal <mittal.neeraj@gmail.com>"
-                ],
+                "dev_dependencies": {
+                    "unittest": ">=0.11.0+2 <0.12.0",
+                    "mock": ">=0.11.0+1 <0.12.0"
+                },
                 "environment": {
                     "sdk": ">=1.4.3 <2.0.0"
                 },
@@ -516,10 +513,13 @@
                 "dependencies": {
                     "angular": ">=0.12.0 <0.13.0"
                 },
-                "dev_dependencies": {
-                    "unittest": ">=0.11.0+2 <0.12.0",
-                    "mock": ">=0.11.0+1 <0.12.0"
-                },
+                "authors": [
+                    "Sergey Akopkokhyants <akserg@gmail.com>",
+                    "Tonis Pool <tonis.pool@gmail.com>",
+                    "Gunter Zochbauer <gzoechi@gmail.com>",
+                    "Francesco Cina <ufoscout@gmail.com>",
+                    "Neeraj Mittal <mittal.neeraj@gmail.com>"
+                ],
                 "homepage": "http://akserg.github.io/angular.dart.ui",
                 "name": "angular_ui"
             },
@@ -569,10 +569,10 @@
                 },
                 "version": "0.0.11",
                 "dependencies": {
-                    "bwu_utils_browser": ">=0.0.2 <0.1.0",
                     "polymer": ">=0.11.0-dev <0.12.0",
-                    "quiver_log": ">=1.0.1 <2.0.0",
                     "quiver": ">=0.18.2 <0.19.0",
+                    "quiver_log": ">=1.0.1 <2.0.0",
+                    "bwu_utils_browser": ">=0.0.2 <0.1.0",
                     "bwu_sparkline": ">=0.0.2 <0.1.0"
                 },
                 "dev_dependencies": {
@@ -811,10 +811,10 @@
                 "environment": {
                     "sdk": ">=1.2.0"
                 },
+                "version": "0.7.0",
                 "dependencies": {
                     "intl": "any"
                 },
-                "version": "0.7.0",
                 "authors": [
                     "Simon Pai <simonpai@rikulo.org>",
                     "Tom Yeh <tomyeh@rikulo.org>"
@@ -2320,15 +2320,15 @@
                 },
                 "version": "0.1.2+2",
                 "dependencies": {
-                    "logging": ">=0.9.0 <0.10.0",
-                    "args": ">=0.9.0 <0.12.0",
                     "bot": ">=0.26.0 <0.28.0",
+                    "args": ">=0.9.0 <0.12.0",
+                    "logging": ">=0.9.0 <0.10.0",
                     "path": ">=1.0.0 <2.0.0"
                 },
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.12.0",
-                    "hop_unittest": ">=0.1.0 <0.2.0",
-                    "hop": ">=0.28.1+2 <0.32.0"
+                    "hop": ">=0.28.1+2 <0.32.0",
+                    "hop_unittest": ">=0.1.0 <0.2.0"
                 },
                 "homepage": "https://github.com/kevmoo/completion.dart",
                 "name": "completion"
@@ -2820,15 +2820,12 @@
         "latest": {
             "pubspec": {
                 "description": "Angular for dart.",
-                "authors": [
-                    "Misko Hevery <misko@hevery.com>",
-                    "Pavel Jbanov <pavelgj@gmail.com>",
-                    "James deBoer <james@huronbox.com>",
-                    "Chirayu Krishnappa <chirayu@google.com>",
-                    "Matias Niemela <matias@yearofmoo.com>",
-                    "Paul Rohde <paul@paulrohde.com>",
-                    "Victor Berchet <victor@suumit.com>"
-                ],
+                "dev_dependencies": {
+                    "guinness": ">=0.1.3 <0.2.0",
+                    "unittest": ">=0.10.1 <0.12.0",
+                    "benchmark_harness": ">=1.0.0",
+                    "mock": ">=0.10.0 <0.12.0"
+                },
                 "environment": {
                     "sdk": ">=1.4.0"
                 },
@@ -2847,12 +2844,15 @@
                     "html5lib": ">=0.10.0 <0.11.0",
                     "browser": ">=0.10.0 <0.11.0"
                 },
-                "dev_dependencies": {
-                    "guinness": ">=0.1.3 <0.2.0",
-                    "unittest": ">=0.10.1 <0.12.0",
-                    "benchmark_harness": ">=1.0.0",
-                    "mock": ">=0.10.0 <0.12.0"
-                },
+                "authors": [
+                    "Misko Hevery <misko@hevery.com>",
+                    "Pavel Jbanov <pavelgj@gmail.com>",
+                    "James deBoer <james@huronbox.com>",
+                    "Chirayu Krishnappa <chirayu@google.com>",
+                    "Matias Niemela <matias@yearofmoo.com>",
+                    "Paul Rohde <paul@paulrohde.com>",
+                    "Victor Berchet <victor@suumit.com>"
+                ],
                 "homepage": "https://angulardart.org",
                 "name": "angular"
             },
@@ -2985,8 +2985,8 @@
                 },
                 "version": "1.0.0+2",
                 "dependencies": {
-                    "string_scanner": ">=0.0.2 <0.1.0",
-                    "collection": ">=0.9.2 <0.10.0"
+                    "collection": ">=0.9.2 <0.10.0",
+                    "string_scanner": ">=0.0.2 <0.1.0"
                 },
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.12.0"
@@ -4578,8 +4578,8 @@
                 "version": "0.11.0+1",
                 "dependencies": {
                     "source_maps": ">=0.9.1 <0.10.0",
-                    "utf": ">=0.9.0 <0.10.0",
-                    "csslib": ">=0.10.0 <0.11.0"
+                    "csslib": ">=0.10.0 <0.11.0",
+                    "utf": ">=0.9.0 <0.10.0"
                 },
                 "dev_dependencies": {
                     "path": ">=0.9.0 <2.0.0",
@@ -4717,11 +4717,10 @@
         "latest": {
             "pubspec": {
                 "description": "Library to use for Google OAuth2 authentication / Client-side flow",
-                "authors": [
-                    "Gerwin Sturm <scarygami@gmail.com>",
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Kevin Moore <kevin@thinkpixellab.com>"
-                ],
+                "dev_dependencies": {
+                    "hop": ">=0.30.3 <0.32.0",
+                    "browser": ">=0.9.0 <0.11.0"
+                },
                 "environment": {
                     "sdk": ">=1.3.0 <2.0.0"
                 },
@@ -4733,10 +4732,11 @@
                     "crypto": ">=0.9.0 <0.10.0",
                     "path": ">=1.0.0 <2.0.0"
                 },
-                "dev_dependencies": {
-                    "hop": ">=0.30.3 <0.32.0",
-                    "browser": ">=0.9.0 <0.11.0"
-                },
+                "authors": [
+                    "Gerwin Sturm <scarygami@gmail.com>",
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Kevin Moore <kevin@thinkpixellab.com>"
+                ],
                 "homepage": "https://github.com/dart-gde/dart-google-oauth2-library",
                 "name": "google_oauth2_client"
             },
@@ -4984,9 +4984,9 @@
                 "dev_dependencies": {
                     "path": ">=0.9.0 <0.10.0",
                     "editor_build": ">=0.0.4 <0.1.0",
-                    "browser": ">=0.9.0 <0.10.0",
+                    "js_wrapping_generator": "0.0.3",
                     "unittest": ">=0.9.0 <0.10.0",
-                    "js_wrapping_generator": "0.0.3"
+                    "browser": ">=0.9.0 <0.10.0"
                 },
                 "homepage": "https://github.com/a14n/dart-google-maps",
                 "name": "google_maps"
@@ -5142,7 +5142,6 @@
                 "environment": {
                     "sdk": ">=1.4.0 <2.0.0"
                 },
-                "version": "0.31.0",
                 "dependencies": {
                     "completion": ">=0.1.0 <0.2.0",
                     "logging": ">=0.9.1 <0.10.0",
@@ -5152,10 +5151,11 @@
                     "bot_io": ">=0.26.1 <0.27.0",
                     "path": ">=0.9.0 <2.0.0"
                 },
+                "version": "0.31.0",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.12.0",
-                    "hop_docgen": ">=0.1.0 <0.2.0",
-                    "hop_unittest": ">=0.1.0 <0.2.0"
+                    "hop_unittest": ">=0.1.0 <0.2.0",
+                    "hop_docgen": ">=0.1.0 <0.2.0"
                 },
                 "homepage": "https://github.com/dart-lang/hop",
                 "name": "hop"
@@ -5249,9 +5249,9 @@
                 },
                 "dependencies": {
                     "git": ">=0.2.1 <0.5.0",
+                    "args": ">=0.10.0 <0.12.0",
                     "bot_io": ">=0.26.3 <0.27.0",
-                    "hop": ">=0.30.2 <0.32.0",
-                    "args": ">=0.10.0 <0.12.0"
+                    "hop": ">=0.30.2 <0.32.0"
                 },
                 "version": "0.1.3+1",
                 "dev_dependencies": {
@@ -5347,17 +5347,17 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
+                "version": "0.26.3+1",
                 "dependencies": {
-                    "logging": ">=0.9.0 <0.10.0",
                     "bot": ">=0.27.0 <0.28.0",
+                    "logging": ">=0.9.0 <0.10.0",
                     "crypto": ">=0.9.0 <0.10.0",
                     "path": ">=1.0.0 <2.0.0"
                 },
-                "version": "0.26.3+1",
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.12.0",
-                    "hop_unittest": ">=0.1.0 <0.2.0",
                     "hop_docgen": ">=0.1.0 <0.2.0",
+                    "hop_unittest": ">=0.1.0 <0.2.0",
                     "hop": ">=0.28.1+2 <0.32.0"
                 },
                 "homepage": "https://github.com/kevmoo/bot_io.dart",
@@ -5806,10 +5806,10 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
+                "version": "2.1.1",
                 "dependencies": {
                     "petitparser": ">=1.0.0 <2.0.0"
                 },
-                "version": "2.1.1",
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.12.0",
                     "junitconfiguration": ">=1.0.0 <2.0.0",
@@ -7403,11 +7403,9 @@
         "latest": {
             "pubspec": {
                 "description": "Auto-generated client library for accessing the plus v1 API",
-                "authors": [
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Gerwin Sturm <scarygami@gmail.com>",
-                    "Kevin Moore <kevin@thinkpixellab.com>"
-                ],
+                "dev_dependencies": {
+                    "hop": ">=0.30.2 <0.31.0"
+                },
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
@@ -7415,9 +7413,11 @@
                 "dependencies": {
                     "google_oauth2_client": ">=0.3.2 <0.4.0"
                 },
-                "dev_dependencies": {
-                    "hop": ">=0.30.2 <0.31.0"
-                },
+                "authors": [
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Gerwin Sturm <scarygami@gmail.com>",
+                    "Kevin Moore <kevin@thinkpixellab.com>"
+                ],
                 "homepage": "https://github.com/dart-gde/discovery_api_dart_client_generator",
                 "name": "google_plus_v1_api"
             },
@@ -8865,9 +8865,11 @@
         "latest": {
             "pubspec": {
                 "description": "Auto-generated client library for accessing the androidpublisher v1.1 API",
-                "dev_dependencies": {
-                    "hop": ">=0.30.2 <0.31.0"
-                },
+                "authors": [
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Gerwin Sturm <scarygami@gmail.com>",
+                    "Kevin Moore <kevin@thinkpixellab.com>"
+                ],
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
@@ -8875,11 +8877,9 @@
                 "dependencies": {
                     "google_oauth2_client": ">=0.3.2 <0.4.0"
                 },
-                "authors": [
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Gerwin Sturm <scarygami@gmail.com>",
-                    "Kevin Moore <kevin@thinkpixellab.com>"
-                ],
+                "dev_dependencies": {
+                    "hop": ">=0.30.2 <0.31.0"
+                },
                 "homepage": "https://github.com/dart-gde/discovery_api_dart_client_generator",
                 "name": "google_androidpublisher_v1_1_api"
             },
@@ -9713,10 +9713,10 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
-                "version": "0.11.0+1",
                 "dependencies": {
                     "matcher": ">=0.10.0 <0.11.0"
                 },
+                "version": "0.11.0+1",
                 "dev_dependencies": {
                     "unittest": ">=0.10.0 <0.12.0"
                 },
@@ -9871,10 +9871,10 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
+                "version": "0.11.0+1",
                 "dependencies": {
                     "collection": ">=0.9.0 <0.10.0"
                 },
-                "version": "0.11.0+1",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.11.0"
                 },
@@ -11130,6 +11130,18 @@
         "latest": {
             "pubspec": {
                 "description": "An library for accessing the Chrome APIs in a packaged app or extension.\n",
+                "authors": [
+                    "Devon Carew <devoncarew@gmail.com>",
+                    "Adam Singer <financeCoding@gmail.com>",
+                    "Kevin Moore <kevin@thinkpixellab.com>"
+                ],
+                "environment": {
+                    "sdk": ">=1.0.0 <2.0.0"
+                },
+                "version": "0.5.6",
+                "dependencies": {
+                    "barback": "any"
+                },
                 "dev_dependencies": {
                     "logging": "any",
                     "unittest": "any",
@@ -11139,18 +11151,6 @@
                     "unscripted": ">=0.3.0 <0.4.0",
                     "browser": "any"
                 },
-                "environment": {
-                    "sdk": ">=1.0.0 <2.0.0"
-                },
-                "version": "0.5.6",
-                "dependencies": {
-                    "barback": "any"
-                },
-                "authors": [
-                    "Devon Carew <devoncarew@gmail.com>",
-                    "Adam Singer <financeCoding@gmail.com>",
-                    "Kevin Moore <kevin@thinkpixellab.com>"
-                ],
                 "homepage": "https://github.com/dart-gde/chrome.dart",
                 "name": "chrome"
             },
@@ -11338,10 +11338,10 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
-                "version": "1.0.17",
                 "dependencies": {
                     "crypto": ">=0.9.0 <1.0.0"
                 },
+                "version": "1.0.17",
                 "dev_dependencies": {
                     "unittest": "any",
                     "args": "any",
@@ -13135,9 +13135,11 @@
         "version_url": "http://pub.dartlang.org/api/packages/quiver_log/versions/{version}",
         "latest": {
             "pubspec": {
+                "dev_dependencies": {
+                    "unittest": ">=0.8.1"
+                },
                 "description": "A logging utility for Dart, part of the quiver utilities",
                 "documentation": "http://google.github.io/quiver-log/",
-                "name": "quiver_log",
                 "environment": {
                     "sdk": ">=0.8.7"
                 },
@@ -13151,9 +13153,7 @@
                     "Adam Bender <bendera@google.com>"
                 ],
                 "homepage": "https://github.com/google/quiver-log",
-                "dev_dependencies": {
-                    "unittest": ">=0.8.1"
-                }
+                "name": "quiver_log"
             },
             "url": "http://pub.dartlang.org/api/packages/quiver_log/versions/1.0.1",
             "archive_url": "http://pub.dartlang.org/packages/quiver_log/versions/1.0.1.tar.gz",
@@ -14185,9 +14185,11 @@
         "version_url": "http://pub.dartlang.org/api/packages/quiver/versions/{version}",
         "latest": {
             "pubspec": {
+                "dev_dependencies": {
+                    "unittest": ">=0.8.1"
+                },
                 "description": "A set of utility libraries for Dart",
                 "documentation": "http://google.github.io/quiver-dart/",
-                "name": "quiver",
                 "environment": {
                     "sdk": ">=0.8.7"
                 },
@@ -14204,9 +14206,7 @@
                     "John McDole <codefu@google.com>"
                 ],
                 "homepage": "https://github.com/google/quiver-dart",
-                "dev_dependencies": {
-                    "unittest": ">=0.8.1"
-                }
+                "name": "quiver"
             },
             "url": "http://pub.dartlang.org/api/packages/quiver/versions/0.18.2",
             "archive_url": "http://pub.dartlang.org/packages/quiver/versions/0.18.2.tar.gz",
@@ -16176,10 +16176,10 @@
                 "environment": {
                     "sdk": ">=0.8.10+6 <2.0.0"
                 },
-                "version": "0.9.2+1",
                 "dependencies": {
                     "collection": ">=0.9.0 <0.10.0"
                 },
+                "version": "0.9.2+1",
                 "homepage": "http://www.dartlang.org",
                 "name": "unmodifiable_collection"
             },
@@ -16629,10 +16629,10 @@
         "latest": {
             "pubspec": {
                 "description": "Access JavaScript from Dart.",
-                "authors": [
-                    "Dart Team <misc@dartlang.org>",
-                    "Alexandre Ardhuin <alexandre.ardhuin@gmail.com>"
-                ],
+                "dev_dependencies": {
+                    "ghpages_generator": ">=0.0.1",
+                    "unittest": ">=0.8.7"
+                },
                 "environment": {
                     "sdk": ">0.8.7"
                 },
@@ -16640,10 +16640,10 @@
                 "dependencies": {
                     "browser": ">=0.8.7"
                 },
-                "dev_dependencies": {
-                    "ghpages_generator": ">=0.0.1",
-                    "unittest": ">=0.8.7"
-                },
+                "authors": [
+                    "Dart Team <misc@dartlang.org>",
+                    "Alexandre Ardhuin <alexandre.ardhuin@gmail.com>"
+                ],
                 "homepage": "https://github.com/dart-lang/js-interop",
                 "name": "js"
             },
@@ -18284,7 +18284,7 @@
         "latest": {
             "pubspec": {
                 "version": "0.1.0",
-                "name": "firebase",
+                "description": "A Dart wrapper for Firebase.",
                 "dependencies": {
                     "browser": ">=0.8.7 <0.10.0"
                 },
@@ -18292,7 +18292,7 @@
                     "Anant Narayanan <anant@kix.in>"
                 ],
                 "homepage": "https://github.com/firebase/firebase-dart/",
-                "description": "A Dart wrapper for Firebase."
+                "name": "firebase"
             },
             "url": "http://pub.dartlang.org/api/packages/firebase/versions/0.1.0",
             "archive_url": "http://pub.dartlang.org/packages/firebase/versions/0.1.0.tar.gz",
@@ -18466,10 +18466,10 @@
                 "environment": {
                     "sdk": ">=1.0.0 <2.0.0"
                 },
+                "version": "0.9.1+1",
                 "dependencies": {
                     "collection": ">=0.9.0 <0.10.0"
                 },
-                "version": "0.9.1+1",
                 "dev_dependencies": {
                     "unittest": ">=0.9.0 <0.10.0"
                 },
@@ -23772,14 +23772,14 @@
         "latest": {
             "pubspec": {
                 "version": "0.0.1",
-                "description": "Provides a FileSystem factory class for allocating File, Directory and Link objects, with two implementations - one which in turn returns the real objects from dart:io, and one which returns mock versions. This allows  tests to be written that make use of files and directories without having to create them on disk. The mock File/Directory/Link classes are not complete, but have sufficient functionality to work in most cases. The ultimate aim is to have complete mock implementations, as well as the  ability to mock Windows file systems on Linux/Mac and vice-versa, to help  with testing code for cross-platform correctness.",
+                "name": "mockable_filesystem",
                 "dependencies": {
                     "path": ">=0.6.5",
                     "logging": ">=0.6.5"
                 },
                 "author": "Dart Team <misc@dartlang.org>",
                 "homepage": "https://github.com/dart-lang/mockable_filesystem",
-                "name": "mockable_filesystem"
+                "description": "Provides a FileSystem factory class for allocating File, Directory and Link objects, with two implementations - one which in turn returns the real objects from dart:io, and one which returns mock versions. This allows  tests to be written that make use of files and directories without having to create them on disk. The mock File/Directory/Link classes are not complete, but have sufficient functionality to work in most cases. The ultimate aim is to have complete mock implementations, as well as the  ability to mock Windows file systems on Linux/Mac and vice-versa, to help  with testing code for cross-platform correctness."
             },
             "url": "http://pub.dartlang.org/api/packages/mockable_filesystem/versions/0.0.1",
             "archive_url": "http://pub.dartlang.org/packages/mockable_filesystem/versions/0.0.1.tar.gz",

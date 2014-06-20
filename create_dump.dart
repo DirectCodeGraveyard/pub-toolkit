@@ -37,9 +37,10 @@ visit_url(url) {
         var file = new File(outFile);
         file.createSync(recursive: true);
         file.writeAsStringSync(encoder.convert(packages));
-        var current = new File("current/packages.json");
-        current.createSync(recursive: true);
-        current.writeAsStringSync(encoder.convert(packages));
+        var current = new Link("current");
+        if (current.existsSync())
+          current.deleteSync();
+        current.createSync(file.parent.absolute.path, recursive: true);
       }
     });
   });
