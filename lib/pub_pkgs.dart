@@ -2,6 +2,7 @@ library pub.pkgs;
 
 import "dart:io";
 import "dart:convert";
+import "dart:async";
 import "package:http/http.dart" as HTTP;
 
 part 'src/core.dart';
