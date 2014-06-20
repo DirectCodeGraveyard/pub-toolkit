@@ -67,7 +67,7 @@ visit_package_version_url(pkg, name) {
     var file = new File("${outDir}/package/${name}/${content['version']}.json");
     
     file.create(recursive: true).then((_) {
-      return file.writeAsString(encoder.convet(package));
+      return file.writeAsString(encoder.convert(content));
     });
   });
 }
