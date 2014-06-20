@@ -1,4 +1,7 @@
-name: pub_pkgs
+name: pub_toolkit
 version: 1.0.0
 dependencies:
   http: any
+  args: ">=0.11.0+1 <1.0.0"
+  ansicolor: ">=0.0.9 <0.1.0"
+  quiver: ">=0.18.2 <0.19.0"

@@ -3,3 +3,4 @@ pubspec.lock
 data/
 .idea/
 *.iml
+pubspec.lock

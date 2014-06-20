@@ -1,3 +1,3 @@
 # Pub Package Toolkit
 
-Pub Data Dumper and Statistic Generation System
+Pub Client and Statistic Generation System
