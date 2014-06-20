@@ -1,3 +1,3 @@
-# Pub JSON Data Dumps
+# Pub Package Toolkit
 
-These package dumps are automatically generated at 8PM EST Everyday
+Pub Data Dumper and Statistic Generation System
