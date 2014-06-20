@@ -1,6 +1,6 @@
 part of pub.pkgs;
 
-var client = new HttpClient();
+var http = new HTTP.Client();
 var packages = [];
 int pages = 0;
 int currentPage = 0;
