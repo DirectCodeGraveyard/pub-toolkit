@@ -7,9 +7,12 @@ var _get_count = 0;
 HTTP.Client get http {
   _get_count++;
   if (_get_count == 20) {
-    print("Re-creating HTTP Client");
     _get_count = 1;
-    _http.close();
+    sleep(new Duration(milliseconds: 4));
+    var oldClient = _http;
+    new Future(() {
+      oldClient.close();
+    });
     _http = new HTTP.Client();
   }
   return _http;
