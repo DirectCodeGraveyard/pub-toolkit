@@ -53,22 +53,6 @@ visit_package_url(pkg) {
     var file = new File("${outDir}/package/${content['name']}.json");
     file.create(recursive: true).then((_) {
       return file.writeAsString(encoder.convert(packages));
-    }).then((_) {
-      for (var version in content['versions']) {
-        visit_package_version_url(version, content['name']);
-      }
-    });
-  });
-}
-
-visit_package_version_url(pkg, name) {
-  http.get(pkg['url']).then((response) {
-    print("Creating Version Information for '${pkg['pubspec']['name']}@${pkg['version']}'");
-    var content = JSON.decoder.convert(response.body);
-    var file = new File("${outDir}/package/${name}/${content['version']}.json");
-    
-    file.create(recursive: true).then((_) {
-      return file.writeAsString(encoder.convert(content));
     });
   });
 }
