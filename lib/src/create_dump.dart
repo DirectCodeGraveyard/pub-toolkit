@@ -22,6 +22,7 @@ create_dump() {
 visit_packages_url(url) {
   return http.get(url).then((response) {
     var content = JSON.decoder.convert(response.body);
+
     if (pages == 0) {
         pages = content["pages"];
     }
@@ -33,11 +34,13 @@ visit_packages_url(url) {
       visit_packages_url(content["next_url"]);
     } else {
       var file = new File("${outDir}/packages.json");
-      file.createSync(recursive: true);
-      file.writeAsStringSync(encoder.convert(packages));
-      for (var pkg in packages) {
-        visit_package_url(pkg);
-      }
+      file.createSync(recursive: true).then((_) {
+        return file.writeAsString(encoder.convert(packages));
+      }).then((_) {
+        for (var pkg in packages) {
+          visit_package_url(pkg);
+        }
+      });
     }
   });
 }
@@ -47,11 +50,13 @@ visit_package_url(pkg) {
     print("Creating Package Information for '${pkg['name']}'");
     var content = JSON.decoder.convert(response.body);
     var file = new File("${outDir}/package/${content['name']}.json");
-    file.createSync(recursive: true);
-    file.writeAsStringSync(encoder.convert(packages));
-    for (var version in content['versions']) {
-      visit_package_version_url(version, content['name']);
-    }
+    file.create(recursive: true).then((_) {
+      return  file.writeAsString(encoder.convert(packages));
+    }).then((_) {
+      for (var version in content['versions']) {
+        visit_package_version_url(version, content['name']);
+      }
+    });
   });
 }
 
@@ -60,7 +65,9 @@ visit_package_version_url(pkg, name) {
     print("Creating Version Information for '${pkg['pubspec']['name']}@${pkg['version']}'");
     var content = JSON.decoder.convert(response.body);
     var file = new File("${outDir}/package/${name}/${content['version']}.json");
-    file.createSync(recursive: true);
-    file.writeAsStringSync(encoder.convert(packages));
+    
+    file.create(recursive: true).then((_) {
+      return file.writeAsString(encoder.convet(package));
+    });
   });
 }
