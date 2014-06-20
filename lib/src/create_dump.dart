@@ -1,22 +1,6 @@
 part of pub.pkgs;
 
-var _http = new HTTP.Client();
-
-var _get_count = 0;
-
-HTTP.Client get http {
-  _get_count++;
-  if (_get_count == 20) {
-    _get_count = 1;
-    sleep(new Duration(milliseconds: 4));
-    var oldClient = _http;
-    new Future(() {
-      oldClient.close();
-    });
-    _http = new HTTP.Client();
-  }
-  return _http;
-}
+var http = new HTTP.Client();
 
 var packages = [];
 int pages = 0;
