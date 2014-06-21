@@ -2,9 +2,10 @@ part of pub.toolkit;
 
 class PubToolkitException extends Exception {
   final String message;
-  final Exception cause;
+  Exception _cause;
+  Exception get cause;
 
-  PubToolkitException(this.message, [this.cause = null]);
+  PubToolkitException(this.message, [this.cause]);
 
   @override
   toString() => message;

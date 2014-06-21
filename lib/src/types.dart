@@ -4,13 +4,13 @@ class Package {
   final String name;
   final Set<String> uploaders;
   final Set<PackageVersion> versions;
-  final String latest_version_name;
+  String latest_version_name;
+
   PackageVersion get latest_version => versions.where((version) => version.version == latest_version_name).first;
 
-  Package(this.name) {
-    uploaders = new Set<String>();
+  Package(this.name) :
+    uploaders = new Set<String>(),
     versions = new Set<PackageVersion>();
-  }
 
   @override
   toString() => "Package(name: ${name}, uploaders: ${uploaders}, versions: ${versions})";
@@ -31,12 +31,10 @@ class PackageVersion {
 class PubSpec {
   final String name;
   final String version;
-  final String description;
+  String description;
   final Map<String, String> dependencies;
 
-  PubSpec(this.name, this.version, this.description) {
-    dependencies = {};
-  }
+  PubSpec(this.name, this.version, this.description) : dependencies = {};
 
   @override
   toString() => "PubSpec(name: ${name}, version: ${version}, description: ${description}, dependencies: ${dependencies})";
@@ -65,3 +63,5 @@ class PackageList {
 
   int size() => packages.length;
 }
+
+typedef ProgressTracker(String message);

@@ -12,6 +12,7 @@ class PubCoreUtils {
 
   static Future<Package> fetch_package(String api_url, String name) {
     return fetch_as_map("${api_url}/packages/${name}").then((map) {
+      print("Fetching Package ${name}");
       if (map == null) {
         return new Future.value(null);
       } else {
@@ -42,17 +43,17 @@ class PubCoreUtils {
   }
 
   static Future<PackageVersion> parse_package_version(Map<String, Object> map) {
-    var version = new PackageVersion(map["version"], map["url"]);
     return parse_pubspec(map["pubspec"]).then((pubspec) {
+      var version = new PackageVersion(map["version"], map["url"]);
       version._pubspec = pubspec;
       return new Future.value(version);
     });
   }
 
   static Future<PubSpec> parse_pubspec(Map<String, Object> map) {
-    var spec = new PubSpec(map["name"], map["version"], map["description"]);
     return new Future(() {
-      spec.dependencies.addAll(map["dependencies"]);
+      var spec = new PubSpec(map["name"], map["version"], map["description"]);
+      spec.dependencies.addAll(map["dependencies"] != null ? map["dependencies"] : {});
       return new Future.value(spec);
     });
   }
