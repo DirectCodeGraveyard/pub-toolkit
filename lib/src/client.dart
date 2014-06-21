@@ -50,9 +50,15 @@ class PubClient {
     }).then((List<Map<String, Object>> pages) {
       var waits = new FutureGroup();
       pages.forEach((page) {
-        var packages = [];
-        for (var pkg in page["packages"]) {
-          packages.add(PubCoreUtils.parse_package(pkg));
+        for (Map<String, Object> info in page["packages"]) {
+          waits.add(PubCoreUtils.fetch_package(api_url, info["name"]).then((package) {
+            if (package == null) {
+              throw new ServerException("failed to fetch package '${info["name"]}'");
+            }
+            tracker("fetched:type=package:name=${package.name}:url=${api_url}/packages/${package.name}");
+            tracker("progress:waiting_for=${waits.results.where((i) => i == null).length}:complete=${waits.results.where((i) => i != null).length}");
+            return new Future.value(package);
+          }));
         }
       });
       return waits.future;
