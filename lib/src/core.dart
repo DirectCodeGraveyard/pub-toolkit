@@ -12,7 +12,6 @@ class PubCoreUtils {
 
   static Future<Package> fetch_package(String api_url, String name) {
     return fetch_as_map("${api_url}/packages/${name}").then((map) {
-      print("Fetching Package ${name}");
       if (map == null) {
         return new Future.value(null);
       } else {
@@ -30,19 +29,19 @@ class PubCoreUtils {
       var versions = map["versions"];
       package = new Package(name);
       package.uploaders.addAll(uploaders);
-      var futures = [];
+      var group = new FutureGroup();
       for (Map<String, Object> version in versions) {
-        futures.add(parse_package_version(version));
+        group.add(parse_package_version(version));
       }
-      return Future.wait(futures);
-    }).then((PackageVersion version) {
-      package.versions.add(version);
+      return group.future;
+    }).then((List<PackageVersion> versions) {
+      package.versions.addAll(versions);
       package.latest_version_name = (map["latest"] as Map<String, Object>)["version"];
       return new Future.value(package);
     });
   }
 
-  static Future<PackageVersion> parse_package_version(Map<String, Object> map) {
+  static Future<PackageVersion> parse_package_version(Map<String, dynamic> map) {
     return parse_pubspec(map["pubspec"]).then((pubspec) {
       var version = new PackageVersion(map["version"], map["url"]);
       version._pubspec = pubspec;

@@ -20,9 +20,9 @@ HTTP.Client get http {
   if (_http == null) {
     var client = new HttpClient();
     client.idleTimeout = new Duration(seconds: 10);
-    client.maxConnectionsPerHost = 6;
+    client.maxConnectionsPerHost = 4;
     client.userAgent = "Pub Toolkit on Dart v${Platform.version}";
-    _http = new HTTP.IOClient();
+    _http = new HTTP.IOClient(client);
   }
   return _http;
 }

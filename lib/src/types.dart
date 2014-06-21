@@ -61,7 +61,7 @@ class PackageList {
     package_by_name(name) != null && package_by_name(name).versions.any((version) => version.version == version);
   }
 
-  int size() => packages.length;
+  int get length => packages.length;
 }
 
 typedef ProgressTracker(String message);

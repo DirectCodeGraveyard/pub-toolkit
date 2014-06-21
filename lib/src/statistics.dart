@@ -10,8 +10,8 @@ class StatisticAnalyzer {
   }
 
   Future<int> package_count() {
-    return client.all_packages().then((packages) {
-      return new Future.value(packages.size());
+    return client.all_packages().then((PackageList packages) {
+      return new Future.value(packages.length);
     });
   }
 
@@ -19,6 +19,7 @@ class StatisticAnalyzer {
     return client.all_packages().then((list) {
       var count = 0;
       list.packages.forEach((pkg) {
+        print("${pkg.name} has ${pkg.versions.length} versions");
         count += pkg.versions.length;
       });
       return new Future.value(count);
@@ -44,8 +45,7 @@ class StatisticAnalyzer {
         numbers.add(pkg.versions.length);
       });
       var together = 0;
-      for (var i in numbers)
-        together += i;
+      numbers.forEach((number) => together += number);
       return new Future.value(together / numbers.length);
     });
   }
@@ -54,7 +54,7 @@ class StatisticAnalyzer {
     return client.all_packages().then((list) {
       var pkgs = new List<Package>.from(list.packages);
       pkgs.sort((Package a, Package b) => a.versions.length.compareTo(b.versions.length));
-      return new Future.value(pkgs.first);
+      return new Future.value(pkgs.last);
     });
   }
 
@@ -64,5 +64,9 @@ class StatisticAnalyzer {
       pkgs.shuffle();
       return new Future.value(pkgs.first);
     });
+  }
+
+  Future<Package> oldest_package() {
+    
   }
 }

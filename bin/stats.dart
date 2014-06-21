@@ -13,20 +13,16 @@ main() {
       print("There are ${count} packages on pub");
     });
 
-    stats.package_count().then((count) {
-      print("There are ${count} packages on pub");
+    stats.total_versions().then((versions) {
+      print("There are ${versions} published versions.");
     });
 
-    stats.total_versions().then((count) {
-      print("There are ${count} published versions.");
-    });
-
-    stats.average_version_count().then((count) {
-      print("The average version count is ${count}");
+    stats.average_version_count().then((avg_version_count) {
+      print("The average version count is ${avg_version_count}");
     });
 
     stats.largest_version_count().then((package) {
-      print("The largest version count is ${package.versions.length} by ${package.name}");
+      print("The largest version count is ${package.versions.length} by ${package.name}.");
     });
   });
 }

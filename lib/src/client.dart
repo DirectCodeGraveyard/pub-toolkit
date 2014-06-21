@@ -17,13 +17,13 @@ class PubClient {
       /* If the Data is 2 minutes old or older, then we want to renew it, otherwise, return cached packages */
       if (_last_fetch.compareTo(new DateTime.now()) <= cache_time) {
         tracker("cache:used=true:stamp:${_last_fetch}");
-        return new Future.value(_packages);
+        return new Future.value(new PackageList(_packages, pub_url: api_url));
       }
     }
 
     tracker("cache:used=false");
 
-    var group = new FutureGroup();
+    var group = new FutureGroup<Map<String, Object>>();
 
     Future<int> page_count() {
       return PubCoreUtils.fetch_as_map("${api_url}/packages").then((response) {
@@ -48,7 +48,7 @@ class PubClient {
       }
       return group.future;
     }).then((List<Map<String, Object>> pages) {
-      var waits = new FutureGroup();
+      var waits = new FutureGroup<Package>();
       pages.forEach((page) {
         for (Map<String, Object> info in page["packages"]) {
           waits.add(PubCoreUtils.fetch_package(api_url, info["name"]).then((package) {
