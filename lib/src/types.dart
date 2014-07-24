@@ -64,4 +64,4 @@ class PackageList {
   int get length => packages.length;
 }
 
-typedef ProgressTracker(String message);
+typedef ProgressTracker(String id, Map params);

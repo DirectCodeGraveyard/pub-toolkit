@@ -10,24 +10,27 @@ class PubClient {
   final ProgressTracker tracker;
 
   PubClient({this.api_url: "http://pub.dartlang.org/api", progress_tracker: null}) :
-    tracker = progress_tracker == null ? ((message) {}) : progress_tracker;
+    tracker = progress_tracker == null ? ((id, message) {}) : progress_tracker;
 
   Future<PackageList> all_packages() {
     if (_last_fetch != null && cache_time != -1) {
       /* If the Data is 2 minutes old or older, then we want to renew it, otherwise, return cached packages */
       if (_last_fetch.compareTo(new DateTime.now()) <= cache_time) {
-        tracker("cache:used=true:stamp:${_last_fetch}");
+        tracker("cache", { "used": true, "stamp" : _last_fetch });
         return new Future.value(new PackageList(_packages, pub_url: api_url));
       }
     }
 
-    tracker("cache:used=false");
+    tracker("cache", {"used": false});
 
     var group = new FutureGroup<Map<String, Object>>();
 
     Future<int> page_count() {
       return PubCoreUtils.fetch_as_map("${api_url}/packages").then((response) {
-        tracker("fetched:type=page_count:url=${api_url}/packages");
+        tracker("fetched", {
+          "type": "page_count",
+          "url": "${api_url}/packages"
+        });
         if (response == null) {
           throw new ServerException("Failed to Fetch Package Index");
         }
@@ -37,7 +40,7 @@ class PubClient {
 
     Future<Map<String, Object>> fetch_index(int page) {
       return PubCoreUtils.fetch_as_map("${api_url}/packages?page=${page}").then((val) {
-        tracker("fetched:type=page:number=${page}:url=${api_url}/packages?page=${page}");
+        tracker("fetched", { "type": page, "number": page, "url": "${api_url}/packages?page=${page}" });
         return new Future.value(val);
       });
     }
@@ -55,8 +58,10 @@ class PubClient {
             if (package == null) {
               throw new ServerException("failed to fetch package '${info["name"]}'");
             }
-            tracker("fetched:type=package:name=${package.name}:url=${api_url}/packages/${package.name}");
-            tracker("progress:waiting_for=${waits.results.where((i) => i == null).length}:complete=${waits.results.where((i) => i != null).length}");
+            tracker("fetched", { "type": package, "name": package.name, "url": "${api_url}/packages/${package.name}" });
+            var complete = waits.results.where((i) => i != null).length;
+            var waiting = waits.results.where((i) => i == null).length;
+            tracker("progress", { "waiting": waiting, "complete": complete });
             return new Future.value(package);
           }));
         }

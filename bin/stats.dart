@@ -1,11 +1,14 @@
 #!/usr/bin/env dart
 import "package:pub_toolkit/pub_toolkit.dart";
 
-import "package:quiver/async.dart" show FutureGroup;
-
 main() {
-  var stats = new StatisticAnalyzer(new PubClient(progress_tracker: (message) {
-    print(message);
+  var stats = new StatisticAnalyzer(new PubClient(progress_tracker: (String id, Map data) {
+    var buffer = new StringBuffer();
+    buffer.write(id);
+    data.forEach((k, v) {
+      buffer.write(":${k}=${v}");
+    });
+    print(buffer);
   }));
 
   stats.initialize().then((_) {
