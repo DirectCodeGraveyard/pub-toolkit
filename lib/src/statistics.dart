@@ -19,7 +19,6 @@ class StatisticAnalyzer {
     return client.all_packages().then((list) {
       var count = 0;
       list.packages.forEach((pkg) {
-        print("${pkg.name} has ${pkg.versions.length} versions");
         count += pkg.versions.length;
       });
       return new Future.value(count);
@@ -27,12 +26,12 @@ class StatisticAnalyzer {
   }
 
   Future<int> packages_depending_on(String name, [String version = "latest"]) {
-    return client.all_packages().then((packages) {
-      if (packages.has_package(name))
+    return client.all_packages().then((PackageList list) {
+      if (list.has_package(name))
         throw new PackageNotFoundException(name);
-      if (packages.package_has_version(name, version))
+      if (list.package_has_version(name, version))
         throw new VersionNotFoundException(name, version);
-      return new Future.value(packages.where((pkg) {
+      return new Future.value(list.packages.where((pkg) {
         return pkg.latest_version.pubspec.dependencies[name] == version;
       }));
     });

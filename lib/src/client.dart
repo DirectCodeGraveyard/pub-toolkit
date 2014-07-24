@@ -40,7 +40,7 @@ class PubClient {
 
     Future<Map<String, Object>> fetch_index(int page) {
       return PubCoreUtils.fetch_as_map("${api_url}/packages?page=${page}").then((val) {
-        tracker("fetched", { "type": page, "number": page, "url": "${api_url}/packages?page=${page}" });
+        tracker("fetched", { "type": "page", "number": page, "url": "${api_url}/packages?page=${page}" });
         return new Future.value(val);
       });
     }
@@ -58,7 +58,7 @@ class PubClient {
             if (package == null) {
               throw new ServerException("failed to fetch package '${info["name"]}'");
             }
-            tracker("fetched", { "type": package, "name": package.name, "url": "${api_url}/packages/${package.name}" });
+            tracker("fetched", { "type": "package", "name": package.name, "url": "${api_url}/packages/${package.name}" });
             var complete = waits.results.where((i) => i != null).length;
             var waiting = waits.results.where((i) => i == null).length;
             tracker("progress", { "waiting": waiting, "complete": complete });
