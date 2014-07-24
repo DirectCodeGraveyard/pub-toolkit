@@ -1,11 +1,11 @@
 part of pub.toolkit;
 
-class PubToolkitException extends Exception {
-  final String message;
+abstract class PubToolkitException implements Exception {
+  dynamic message;
   Exception _cause;
-  Exception get cause;
+  Exception get cause => _cause;
 
-  PubToolkitException(this.message, [this.cause]);
+  PubToolkitException(this.message);
 
   @override
   toString() => message;
